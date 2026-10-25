@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>王思远 · 个人数字名片</title>
+<meta name="description" content="数字经济专业本科三年级，用数据讲清商业问题，把分析做成能落地的决策。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <p class="eyebrow" data-field="eyebrow"></p>
+    <h1 data-field="name"></h1>
+    <p class="tagline" data-field="tagline"></p>
+    <div class="actions">
+      <a class="btn-primary" data-cta="primary" href="resume.pdf">下载简历 PDF</a>
+      <a class="btn-ghost" data-cta="secondary" href="#work">查看作品</a>
+    </div>
+  </header>
+
+  <section id="skills">
+    <p class="section-label" data-field="skillsLabel"></p>
+    <h2 data-field="skillsHeading"></h2>
+    <div class="skill-grid" id="skillGrid"></div>
+    <p class="learning" data-field="learning"></p>
+  </section>
+
+  <section id="work">
+    <p class="section-label" data-field="workLabel"></p>
+    <h2 data-field="workHeading"></h2>
+    <div id="workList"></div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label" data-field="contactLabel"></p>
+    <h2 data-field="contactHeading"></h2>
+    <div class="contact-list" id="contactList"></div>
+  </section>
+
+  <footer>
+    <span data-field="footer"></span>
+    <span>本页由 Vibe Coding 生成</span>
+  </footer>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">本页需要启用 JavaScript 才能显示内容。</p></noscript>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "name": "王思远",
+    "eyebrow": "数字经济 · 本科三年级",
+    "tagline": "用数据讲清商业问题，把分析做成能落地的决策。",
+    "primaryCta": { "label": "下载简历 PDF", "href": "resume.pdf" },
+    "secondaryCta": { "label": "查看作品", "href": "#work" },
+    "footer": "© 2026 王思远 · 数字经济专业"
+  },
+  "skills": {
+    "label": "01 · 能力",
+    "heading": "从数据到决策的能力链条",
+    "groups": [
+      {
+        "name": "数据处理",
+        "items": [
+          { "name": "SQL", "evidence": "清洗 3.1 万条问卷与订单记录" },
+          { "name": "Python / pandas", "evidence": "按月批量处理销售明细" },
+          { "name": "Excel 建模", "evidence": "预算模型，误差控制在 3% 内" }
+        ]
+      },
+      {
+        "name": "分析与洞察",
+        "items": [
+          { "name": "用户调研", "evidence": "主导 312 份问卷 + 12 场深访" },
+          { "name": "行业研究", "evidence": "4 篇消费赛道观察，1 篇被校内公号转载" },
+          { "name": "指标体系", "evidence": "为二手平台搭 3 层指标" }
+        ]
+      },
+      {
+        "name": "表达与协作",
+        "items": [
+          { "name": "Power BI", "evidence": "区域消费看板，60 人课程评审" },
+          { "name": "Tableau", "evidence": "课程可视化作业，评分 A" },
+          { "name": "Git", "evidence": "3 人团队分支协作流程" }
+        ]
+      }
+    ],
+    "learning": "最近在学：SQL 窗口函数、A/B 测试的实验设计"
+  },
+  "work": {
+    "label": "02 · 作品",
+    "heading": "三个能说清结果的项目",
+    "projects": [
+      {
+        "title": "把 312 份问卷变成 3 条产品优先级",
+        "meta": "独立负责 · 2026.03 — 2026.05",
+        "background": "校园二手平台留存偏低，团队不确定该先改哪一环。",
+        "action": "设计问卷并完成 12 场深访，交叉分析 312 份样本，按影响面与实现成本排序需求。",
+        "result": "3 条优先级被采纳进入排期，其中首条已上线，次月留存回升。",
+        "tags": ["用户调研", "需求排序", "问卷设计"]
+      },
+      {
+        "title": "用公开数据做出区域消费差异看板",
+        "meta": "数据处理 · 2026.06",
+        "background": "课程作业要解释区域消费差异，而原始数据分散在三个来源。",
+        "action": "合并三份数据统一口径，用 Power BI 做联动看板，拆出人均消费与结构差异两条线。",
+        "result": "看板覆盖 31 个省份，被选为课程展示案例，评分 A。",
+        "tags": ["Power BI", "数据清洗", "可视化"]
+      },
+      {
+        "title": "一个下午上线，把简历做成可访问的网站",
+        "meta": "设计与开发 · 2026.10",
+        "background": "纸质简历承载不了作品细节，投递时容易被快速略过。",
+        "action": "用自然语言驱动开发完成单页站点，内容与代码分离，构建为静态站点直接托管。",
+        "result": "首屏 3 秒内可读完核心信息，手机端无横向滚动、无需缩放。",
+        "tags": ["Vibe Coding", "静态部署", "内容结构"]
+      }
+    ]
+  },
+  "contact": {
+    "label": "03 · 联系",
+    "heading": "随时可以找我",
+    "items": [
+      {
+        "label": "邮箱",
+        "value": "wangsiyuan@stu.edu.cn",
+        "href": "mailto:wangsiyuan@stu.edu.cn",
+        "copy": "wangsiyuan@stu.edu.cn"
+      },
+      {
+        "label": "微信",
+        "value": "siyuan_wang",
+        "copy": "siyuan_wang"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/siyuan-wang",
+        "href": "https://github.com/siyuan-wang",
+        "actionLabel": "打开"
+      },
+      {
+        "label": "简历",
+        "value": "resume.pdf",
+        "href": "resume.pdf",
+        "download": true,
+        "actionLabel": "下载"
+      }
+    ]
+  }
+}
