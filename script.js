@@ -93,13 +93,18 @@
         return '<span class="tag">' + escapeHtml(tag) + '</span>';
       }).join('');
 
+      var link = project.link
+        ? '<a class="work-link" href="' + escapeHtml(project.link) + '" target="_blank" rel="noopener">' +
+          escapeHtml(project.linkLabel || '打开演示') + ' ↗</a>'
+        : '';
+
       return '<article class="work-card">' +
         '<h3 class="work-title">' + escapeHtml(project.title) + '</h3>' +
         '<p class="work-meta">' + escapeHtml(project.meta) + '</p>' +
         '<div class="work-line"><span class="row-label">背景</span><p>' + escapeHtml(project.background) + '</p></div>' +
         '<div class="work-line"><span class="row-label">行动</span><p>' + escapeHtml(project.action) + '</p></div>' +
         '<div class="work-result"><span class="row-label">结果</span><p>' + escapeHtml(project.result) + '</p></div>' +
-        '<div class="tags">' + tags + '</div>' +
+        '<div class="tags">' + tags + link + '</div>' +
         '</article>';
     }).join('');
 

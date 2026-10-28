@@ -40,7 +40,7 @@
   },
   "work": {
     "label": "02 · 作品",
-    "heading": "三个能说清结果的项目",
+    "heading": "四个能说清结果的项目",
     "projects": [
       {
         "title": "把 312 份问卷变成 3 条产品优先级",
@@ -65,6 +65,16 @@
         "action": "用自然语言驱动开发完成单页站点，内容与代码分离，构建为静态站点直接托管。",
         "result": "首屏 3 秒内可读完核心信息，手机端无横向滚动、无需缩放。",
         "tags": ["Vibe Coding", "静态部署", "内容结构"]
+      },
+      {
+        "title": "客户任务管理系统 SupaProject",
+        "meta": "全栈开发 · 2026.10",
+        "background": "需要一个能真实落地的小型 CRM：客户、任务、跟进记录都要能增删改查。",
+        "action": "React + TypeScript + Vite 构建前端，Supabase 提供数据库与登录鉴权，客户/任务/看板三视图联动。",
+        "result": "完整可用的任务管理系统，已部署在本站 supaproject 目录，可在线登录体验。",
+        "tags": ["React", "TypeScript", "Supabase"],
+        "link": "supaproject/",
+        "linkLabel": "打开在线演示"
       }
     ]
   },

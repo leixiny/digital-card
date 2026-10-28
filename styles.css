@@ -228,6 +228,18 @@ section h2 {
   color: var(--muted);
 }
 
+.work-link {
+  padding: 3px 9px;
+  border-radius: 2px;
+  font-size: 12px;
+  background: var(--ink);
+  color: var(--bg);
+  text-decoration: none;
+  transition: opacity .15s ease;
+}
+
+.work-link:hover { opacity: .8; }
+
 /* ---------- 联系 ---------- */
 .contact-row {
   display: grid;
