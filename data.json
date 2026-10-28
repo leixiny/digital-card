@@ -1,11 +1,11 @@
 {
   "profile": {
-    "name": "王思远",
+    "name": "雷馨怡",
     "eyebrow": "数字经济 · 本科三年级",
     "tagline": "用数据讲清商业问题，把分析做成能落地的决策。",
     "primaryCta": { "label": "下载简历 PDF", "href": "resume.pdf" },
     "secondaryCta": { "label": "查看作品", "href": "#work" },
-    "footer": "© 2026 王思远 · 数字经济专业"
+    "footer": "© 2026 雷馨怡 · 数字经济专业"
   },
   "skills": {
     "label": "01 · 能力",
@@ -74,19 +74,19 @@
     "items": [
       {
         "label": "邮箱",
-        "value": "wangsiyuan@stu.edu.cn",
-        "href": "mailto:wangsiyuan@stu.edu.cn",
-        "copy": "wangsiyuan@stu.edu.cn"
+        "value": "leixinyi@stu.edu.cn",
+        "href": "mailto:leixinyi@stu.edu.cn",
+        "copy": "leixinyi@stu.edu.cn"
       },
       {
         "label": "微信",
-        "value": "siyuan_wang",
-        "copy": "siyuan_wang"
+        "value": "leixinyi",
+        "copy": "leixinyi"
       },
       {
         "label": "GitHub",
-        "value": "github.com/siyuan-wang",
-        "href": "https://github.com/siyuan-wang",
+        "value": "github.com/leixiny",
+        "href": "https://github.com/leixiny",
         "actionLabel": "打开"
       },
       {
@@ -97,5 +97,16 @@
         "actionLabel": "下载"
       }
     ]
+  },
+  "interaction": {
+    "label": "04 · 互动",
+    "heading": "这一页是活的：留言和点赞都会被记住",
+    "likeLabel": "为这页点个赞",
+    "viewsLabel": "次访问",
+    "namePlaceholder": "怎么称呼你？（可留空）",
+    "messagePlaceholder": "写点什么，最多 200 字…",
+    "submitLabel": "发布留言",
+    "emptyHint": "还没有留言，来做第一个吧。",
+    "offlineHint": "互动功能尚未接入 Supabase：在 Supabase 执行 supabase-setup.sql 建表，再把项目地址和 anon key 填入 config.js，这页就会「活」起来。"
   }
 }

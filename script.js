@@ -24,6 +24,9 @@
     }, 1800);
   }
 
+  // 供 supabase-app.js 复用
+  window.showToast = showToast;
+
   function copyText(text) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       return navigator.clipboard.writeText(text);
@@ -143,11 +146,29 @@
     });
   }
 
+  function renderInteraction(inter) {
+    fillField('interactLabel', inter.label);
+    fillField('interactHeading', inter.heading);
+    fillField('likeLabel', inter.likeLabel);
+    fillField('viewsLabel', inter.viewsLabel);
+
+    var name = document.getElementById('gbName');
+    var msg = document.getElementById('gbMessage');
+    var submit = document.getElementById('gbSubmit');
+    if (name) name.placeholder = inter.namePlaceholder || '';
+    if (msg) msg.placeholder = inter.messagePlaceholder || '';
+    if (submit) submit.textContent = inter.submitLabel || '发布留言';
+
+    var offline = document.getElementById('gbOffline');
+    if (offline) offline.textContent = inter.offlineHint || '';
+  }
+
   function render(data) {
     renderProfile(data);
     renderSkills(data.skills);
     renderWork(data.work);
     renderContact(data.contact);
+    if (data.interaction) renderInteraction(data.interaction);
   }
 
   fetch('data.json')

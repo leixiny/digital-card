@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>王思远 · 个人数字名片</title>
+<title>雷馨怡 · 个人数字名片</title>
 <meta name="description" content="数字经济专业本科三年级，用数据讲清商业问题，把分析做成能落地的决策。">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -38,6 +38,35 @@
     <div class="contact-list" id="contactList"></div>
   </section>
 
+  <section id="interact">
+    <p class="section-label" data-field="interactLabel"></p>
+    <h2 data-field="interactHeading"></h2>
+
+    <div class="stat-chips">
+      <button class="stat-chip like-btn" id="likeBtn" type="button">
+        <span class="like-heart" aria-hidden="true">♡</span>
+        <span id="likeCount">—</span>
+        <span class="stat-text" data-field="likeLabel"></span>
+      </button>
+      <span class="stat-chip stat-static">
+        <span id="viewsCount">—</span>
+        <span class="stat-text" data-field="viewsLabel"></span>
+      </span>
+    </div>
+
+    <form class="gb-form" id="gbForm">
+      <input class="gb-input" id="gbName" type="text" maxlength="24" autocomplete="off">
+      <textarea class="gb-textarea" id="gbMessage" maxlength="200" rows="3" required></textarea>
+      <div class="gb-form-foot">
+        <span class="gb-count" id="gbCount">0 / 200</span>
+        <button class="btn-primary gb-submit" id="gbSubmit" type="submit">发布留言</button>
+      </div>
+    </form>
+
+    <div class="gb-list" id="gbList"></div>
+    <p class="gb-offline" id="gbOffline" hidden></p>
+  </section>
+
   <footer>
     <span data-field="footer"></span>
     <span>本页由 Vibe Coding 生成</span>
@@ -45,6 +74,8 @@
 </main>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <noscript><p style="padding:24px;font-family:sans-serif">本页需要启用 JavaScript 才能显示内容。</p></noscript>
+<script src="config.js"></script>
 <script src="script.js"></script>
+<script type="module" src="supabase-app.js"></script>
 </body>
 </html>
